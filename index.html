@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edicine X Band Official</title>
+    <link rel="stylesheet" href="css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+</head>
+
+<body>
+
+    <section class="homepg">
+
+        <div class="navbar">
+
+            <div class="logo">Medicine X</div>
+
+            <nav class="navbar-items h-class" id="home">
+
+                <ul class="nav v-class">
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#album"> Promoção </a></li>
+                    <li><a href="#music"> Music </a></li>
+                    <li><a href="#mp4video"> Videos </a></li>
+
+                </ul>
+
+            </nav>
+            <div class="burger">&#9776</div>
+        </div>
+
+        <div class="content">
+            <h1 class="heading">MUSIC IS MEDICINE X</h1>
+            <p class="para">Music will always be in our hearts
+                from the moment we were born until our last breath</p>
+            <a href="" class="btn">LISTEN NOW</a>
+        </div>
+
+    </section>
+
+
+    <!--Icones section-->
+
+
+    <div class="icons-col">
+        <div class="icons">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-youtube'></i>
+
+        </div>
+    </div>
+
+
+    <!--Albuns music-->
+
+    <div class="albumcolor">
+
+        <div class="album" id="album">
+            <div class="album">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="img/cartaz.png" alt="Imagem 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Design sem nome (7).png" alt="Imagem 2">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/Design sem nome (8).png" alt="Imagem 2">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/Design.png" alt="Imagem 2">
+                    </div>
+                    <!-- Adicione mais itens de galeria conforme necessário -->
+                </div>
+            </div>
+
+            <!-- Modal para exibir a imagem em tamanho completo -->
+            <div class="modal" id="imageModal">
+                <div class="modal-content">
+                    <img src="" alt="Imagem Ampliada">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Section Music-->
+
+    <div class="muscicolor">
+
+        <section id="music">
+            <div class="row" id="music-stop">
+                <!-- Primeira música -->
+                <div class="music-col">
+                    <h3>9_to_5</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img/9_to_5.png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="audio-9to5" src="music/Medicine X  9to5Blues.mp3"></audio>
+
+                        <i class='bx bxs-music' title="music"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-9to5" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-9to5" title="Pause" style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-9to5" title="Volume"></i>
+
+                        <!-- Contêiner para o slider que aparecerá no lado direito -->
+                        <div class="slidecontainer" id="volume-container-9to5" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-9to5">
+                            <span id="volume-display-9to5">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda música -->
+                <div class="music-col">
+                    <h3>Another Soul</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img/Another Soul.png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="another-audio" src="music/Medicine X  9to5Blues.mp3"></audio>
+
+                        <i class='bx bxs-music' title="Música"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-another" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-another" title="Pause"
+                            style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-another" title="Volume"></i>
+
+                        <!-- Contêiner do controle de volume -->
+                        <div class="slidecontainer" id="volume-container-another" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-another">
+                            <span id="volume-display-another">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Segunda música -->
+                <div class="music-col">
+                    <h3>Demon</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img/Demon inside.png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="demon-audio" src="music/Demon inside.mp3"></audio>
+
+                        <i class='bx bxs-music' title="Música"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-demon" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-demon" title="Pause" style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-demon" title="Volume"></i>
+
+                        <!-- Contêiner do controle de volume -->
+                        <div class="slidecontainer" id="volume-container-demon" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-demon">
+                            <span id="volume-display-demon">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Segunda música -->
+                <div class="music-col">
+                    <h3>shameful lie</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img/Enough for the shameful lie.png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="lie-audio" src="music/Enough for the shameful lie.mp3"></audio>
+
+                        <i class='bx bxs-music' title="Música"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-lie" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-lie" title="Pause" style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-lie" title="Volume"></i>
+
+                        <!-- Contêiner do controle de volume -->
+                        <div class="slidecontainer" id="volume-container-lie" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-lie">
+                            <span id="volume-display-lie">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda música -->
+                <div class="music-col">
+                    <h3>Generation</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img//Generation.png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="gen-audio" src="music/Generation.mp3"></audio>
+
+                        <i class='bx bxs-music' title="Música"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-gen" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-gen" title="Pause" style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-gen" title="Volume"></i>
+
+                        <!-- Contêiner do controle de volume -->
+                        <div class="slidecontainer" id="volume-container-gen" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-gen">
+                            <span id="volume-display-gen">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Segunda música -->
+                <div class="music-col">
+                    <h3>Fight for future</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img/Fight for a future.png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="f-audio" src="music/Medicine X  Fight for a Future.mp3"></audio>
+
+                        <i class='bx bxs-music' title="Música"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-f" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-f" title="Pause" style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-f" title="Volume"></i>
+
+                        <!-- Contêiner do controle de volume -->
+                        <div class="slidecontainer" id="volume-container-f" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-f">
+                            <span id="volume-display-f">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Segunda música -->
+                <div class="music-col">
+                    <h3>Flavor</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img/Flavor.png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="r-audio" src="music/Flavor.mp3"></audio>
+
+                        <i class='bx bxs-music' title="Música"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-r" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-r" title="Pause" style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-r" title="Volume"></i>
+
+                        <!-- Contêiner do controle de volume -->
+                        <div class="slidecontainer" id="volume-container-r" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-r">
+                            <span id="volume-display-r">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Segunda música -->
+                <div class="music-col">
+                    <h3>Rebellious</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img/Inserir um título (2).png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="l-audio" src="music/Flavor.mp3"></audio>
+
+                        <i class='bx bxs-music' title="Música"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-l" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-l" title="Pause" style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-l" title="Volume"></i>
+
+                        <!-- Contêiner do controle de volume -->
+                        <div class="slidecontainer" id="volume-container-l" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-l">
+                            <span id="volume-display-l">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Segunda música -->
+                <div class="music-col">
+                    <h3>Loyalt</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img/Loyalt and friendship.png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="q-audio" src="music/Medicine X  Loyalty and Friendship.mp3"></audio>
+
+                        <i class='bx bxs-music' title="Música"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-q" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-q" title="Pause" style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-q" title="Volume"></i>
+
+                        <!-- Contêiner do controle de volume -->
+                        <div class="slidecontainer" id="volume-container-q" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-q">
+                            <span id="volume-display-q">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <!-- Segunda música -->
+                <div class="music-col">
+                    <h3>Thinking</h3>
+                    <p>Medicine X</p>
+                    <div class="music-img">
+                        <img class="img" src="img/Thinking about the other side.png" alt="Generation Cover" />
+                    </div>
+                    <div class="music-play">
+                        <audio class="audio" id="z-audio" src="music/Medicine X - Thinking about the other side.mp3"></audio>
+
+                        <i class='bx bxs-music' title="Música"></i>
+
+                        <!-- Botões de Play/Pause -->
+                        <i class='bx bx-play-circle' id="play-button-z" title="Play"></i>
+                        <i class='bx bx-pause-circle' id="pause-button-z" title="Pause" style="display: none;"></i>
+
+                        <!-- Ícone de Volume -->
+                        <i class='bx bx-volume-full' id="volume-icon-z" title="Volume"></i>
+
+                        <!-- Contêiner do controle de volume -->
+                        <div class="slidecontainer" id="volume-container-z" style="display: none;">
+                            <input type="range" min="0" max="1" step="0.01" value="1" class="slider"
+                                id="volume-slider-z">
+                            <span id="volume-display-z">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+
+
+    <!-- Seção do Carrossel de Vídeos -->
+
+
+
+
+
+    <div class="containervideo" id="mp4video">
+        <div class="main-video-container">
+            <video src="videos/projectx.mp4" loop controls class="main-video"></video>
+            <h3 class="main-vid-title">Project X (2012) - Alternate Trailer [Fan Edit] "Revolution X: Unleashing Chaos" by Medicine X</h3>
+        </div>
+        <div class="video-list-container" id="videosList"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- __________footer -->
+    <section class="comment-section">
+        <div class="comment">
+            <h1 class="head">
+                leave a comment
+            </h1>
+            <form action="/comments" method="POST" class="comment-sec">
+                <input type="text" name="name" placeholder="enter your name">
+                <input type="email" name="email" placeholder="enter your email">
+                <textarea name="comment" rows="3" placeholder="leave your comment"></textarea>
+                <button class="btn btn1" value="comments">submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>copyright @2019-2024 made by ADX. All right reserved</footer>
+
+
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    font-family: 'Roboto', sans-serif;
+}
+
+.homepg {
+
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/img2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.logo {
+
+    color: #41bbbf;
+    margin-left: 5%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar {
+
+    display: flex;
+    position: relative;
+    padding: 3% 2%;
+}
+
+.navbar-items {
+
+    flex: 1;
+    text-align: right;
+    margin-top: 12px;
+}
+
+.navbar-items ul {
+
+    padding-right: 20px;
+}
+
+.navbar-items ul li {
+
+    list-style: none;
+    display: inline-block;
+}
+
+
+.navbar-items ul li a {
+
+    padding: 0 30px;
+    color: #df097b;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.navbar-items ul li a:hover {
+
+    color: #41bbbf;
+}
+
+
+.content {
+
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    position: absolute;
+    color: white;
+    margin-top: 30px;
+
+    letter-spacing: 2px;
+
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.para {
+
+    font-size: 15px;
+    margin-bottom: 34px;
+    font-weight: 700;
+
+
+}
+
+.para_1,
+.head {
+
+    color: #ffffff;
+}
+
+.btn {
+
+    text-decoration: none;
+    color: white;
+    border: 1px solid #41bbbf;
+    font-size: 15px;
+    background-color: #df097b;
+    font-weight: 600;
+    padding: 15px 13px;
+    border-radius: 50px;
+}
+
+.btn:hover {
+
+    background-color: transparent;
+    color: white;
+    transition: 3;
+}
+
+burger {
+    display: none;
+}
+
+
+.icons-col {
+
+    top: 200px;
+    left: 1%;
+    width: 76px;
+    position: fixed;
+    z-index: 2;
+}
+
+.icons {
+
+    display: flex;
+    flex-direction: column;
+    padding: 13% 16%;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.icons i {
+    font-size: 26px;
+    padding: 20% 0;
+    color: #df097b;
+}
+
+.icons i:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+/* gallery */
+
+
+.album {
+    width: 90%;
+    margin: auto;
+    padding: 3% 0;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.gallery-item {
+    width: 350px; /* Aumenta o tamanho do item da galeria */
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 340px; /* Aumenta a largura das imagens */
+    height: 340px; /* Aumenta a altura das imagens */
+    display: block;
+    cursor: pointer;
+    border-radius: 10%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Efeito de hover para aumentar a imagem e adicionar brilho */
+.gallery-item img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+    filter: brightness(1.2); /* Aumenta o brilho da imagem */
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo mais escuro */
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Permite rolagem se o conteúdo for maior que a tela */
+    z-index: 1000; /* Garante que o modal esteja acima de todos os outros elementos */
+}
+
+.modal-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto; /* Permite rolagem no conteúdo */
+}
+
+.modal img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Estilo para o botão de fechar */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 10px;
+    line-height: 20px;
+}
+
+
+/*Music section*/
+
+
+#music {
+
+    padding: 3% 0;
+    margin: auto;
+    width: 80%;
+
+
+
+
+}
+
+.row {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+
+.music-col {
+
+    flex-basis: 19%;
+    height: 20rem;
+    border-radius: 1rem;
+    margin: 5px;
+    background-color:#41bbbf;
+}
+
+
+.music-col h3 {
+
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 25px;
+    color: white;
+}
+
+.music-col p {
+    color: white;
+    text-align: center;
+}
+
+.music-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.music-img .img {
+    width: 150px;
+    /* Ajuste conforme necessário */
+    height: 150px;
+    /* Ajuste conforme necessário */
+    border-radius: 50%;
+    /* Torna a imagem redonda */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste ao contêiner sem distorção */
+    padding-top: 0.3rem;
+}
+
+
+.music-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.music-play .bx {
+
+    font-size: 28px;
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.playmusic {
+    animation: rotation 4s linear infinite;
+}
+
+@keyframes rotation {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.muscicolor {
+    background-color: #000000;
+}
+
+.albumcolor {
+    background-color:#df097b;
+}
+
+
+/* _________comment */
+.comment-section {
+    width: 100%;
+    background-color:#41bbbf;
+    overflow: hidden;
+    padding: 5% 0;
+}
+
+.comment {
+    color: #fff;
+    margin: auto;
+}
+
+.comment-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comment h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.comment-sec input,
+.comment-sec textarea,
+.btn1 {
+    display: block;
+    width: 40%;
+    background-color: rgb(49 49 48);
+    outline: none;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn1 {
+    background-color:#df097b;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn1:hover {
+    background-color: rgb(49 49 48);
+    letter-spacing: 1px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #000000;
+    padding: 8px 8px;
+}
+
+/* _________responsiveness */
+@media only screen and (max-width:990px) {
+
+    .gallery-item {
+        width: 45%; /* Reduz a largura para caber melhor em tablets */
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto; /* Ajusta automaticamente a altura */
+    }
+
+
+    .navbar-items {
+        position: absolute;
+        background-color:#41bbbf;
+        height: 100vh;
+        width: 200px;
+        right: 0;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        margin-top: 0;
+        transition: all 1s ease-out;
+    }
+
+    .navbar-items ul li {
+        display: block;
+        padding: 16px 0;
+        margin-left: 15px;
+    }
+
+    .navbar-items ul {
+        padding-top: 48%;
+        padding-right: 5px;
+    }
+
+    .navbar-items ul li a {
+        color: #ffffff;
+        padding: 0 18px;
+        font-size: 22px;
+    }
+
+    .navbar-items ul li a:hover {
+        border: 2px solid black;
+        color: #000;
+    }
+
+    .burger {
+        display: block;
+        z-index: 3;
+        position: absolute;
+        color: #fff;
+        right: 7%;
+        top: 5px;
+        font-size: 35px;
+    }
+
+    .h-class {
+        height: 100vh;
+        opacity: 0;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+    .box {
+        padding: 2% 0;
+    }
+
+    .comment-sec input,
+    .comment-sec textarea,
+    .btn1 {
+        width: 70%;
+    }
+
+    .music-col {
+        flex-basis: 30%;
+        /* Exibe 3 colunas */
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+
+    .para {
+        font-size: 9px;
+    }
+
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 90%; /* Reduz a largura para caber melhor em smartphones */
+        margin: 10px 0;
+    }
+    .content {
+        left: 57%;
+    }
+
+    .icons-col {
+        width: 66px;
+    }
+
+    .comment h1 {
+        font-size: 21px;
+    }
+
+    .music-play .bx {
+        padding: 2rem 1.7rem;
+    }
+
+    .music-col {
+        flex-basis: 100%;
+        /* Exibe 1 coluna */
+    }
+}
+
+
+
+
+
+.music-play {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slidecontainer {
+    position: absolute;
+    right: 70px;
+    bottom: 0;
+    width: 150px;
+    text-align: center;
+    background:#ffffff;
+    border-radius: 50px;
+    padding: 10px;
+    height: 35px;
+    top: 63px;
+    
+   
+}
+
+.slider {
+    width: 100%;
+  
+    
+}
+
+#volume-display {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.containervideo {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 20px;
+}
+.main-video-container {
+	flex: 1 1 700px;
+	background-color: #fff;
+	padding: 15px;
+}
+.main-video {
+	margin-bottom: 7px;
+	width: 100%;
+    border-radius: 20px;
+}
+.main-vid-title {
+	font-size: 20px;
+	color: #444;
+}
+.video-list-container {
+	flex: 1 1 300px;
+	border-left: 2px solid #eee;
+	background-color: #ffffff;
+	padding: 15px 15px 15px 35px;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 10px;
+	border: 1px solid #eee;
+	cursor: pointer;
+	border-radius: 20px;
+	margin-bottom: 10px;
+    background-color: #df097b;
+}
+.list:last-child {
+	margin-bottom: 0;
+}
+.list.active {
+	background-color:#41bbbf;
+}
+.container .video-list-container .list.active .list-title {
+	color: #fff;
+}
+.list-video {
+	width: 100px;
+	border-radius: 5px;
+}
+.list-title {
+	font-size: 17px;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
